@@ -1,16 +1,16 @@
 import {
-    THEME_DARK,THEME_LIGHT
+    DARK_THEME,LIGHT_THEME
 } from "../constant";
 const initialState = {
-    theme: 'dark' 
+    theme: false 
 };
-export default (state = initialState,{ type }) => {
+export default (theme = initialState,{ type }) => {
     switch (type) {
-        case THEME_DARK:
-            return { theme: 'dark' };
-        case THEME_LIGHT:
-            return { theme: 'light' };
+        case DARK_THEME:
+            return { theme: true };
+        case LIGHT_THEME:
+            return { theme: false };
         default:
-            return state;
+            return theme;
     }
 };

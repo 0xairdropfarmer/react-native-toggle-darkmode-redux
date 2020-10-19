@@ -1,2 +1,2 @@
-export const THEME_DARK = "THEME_DARK";
-export const THEME_LIGHT = "THEME_LIGHT";
+export const DARK_THEME = "DARK_THEME";
+export const LIGHT_THEME = "LIGHT_THEME";
